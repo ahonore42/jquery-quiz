@@ -5,8 +5,8 @@ const startButton = $('#start')
 const promptQuestion = $('#prompt')
 let questionIndex = 0
 const DISPLAY_CSS = 'block'
-const quizForm = $('.form')
- let rbOne = $('#one')
+const quizForm = $('.form') 
+let rbOne = $('#one')
 let radioButton = $('.answer')
 
 let nextSubmit = $('.next')
@@ -78,11 +78,11 @@ const fetchChoices = () => {
       {   
       storeResult();
       questionIndex++;
-        if(questionIndex == (questions.length-1))
+        if(questionIndex == (questions.length))
         {
-          storeResult();
           endQuiz();
           console.log('Result page')
+          
         }
         else{
           displayQuestion();  
